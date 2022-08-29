@@ -3,6 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{090D6A06-C93E-4C3A-89A9-DABD3024D6C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{ADF0C74D-118E-4085-A396-7DFEA2FD1380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Payments", "source\Modules\ExpressStore.Modules.Payments\ExpressStore.Modules.Payments.csproj", "{81B085BE-1A63-44FA-AF01-83F469D55D18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D2E1B429-F25A-443A-9573-BC6900A99144}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Modules.Payments.Tests", "test\ExpressStore.Modules.Payments.Tests\ExpressStore.Modules.Payments.Tests.csproj", "{379277EA-CE9F-4625-AF0E-65D4ECF5E3AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{808C031F-3AA6-419F-ABB5-1495700EE677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Infrastructure.Payments", "source\Infrastructure\ExpressStore.Infrastructure.Payments\ExpressStore.Infrastructure.Payments.csproj", "{AD4FE93A-4C9B-4251-8B15-EDDF5029A788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressStore.Infrastructure.Payments.Tests", "test\ExpressStore.Infrastructure.Payments.Tests\ExpressStore.Infrastructure.Payments.Tests.csproj", "{329E2DE5-9AE3-4E1E-A80D-F92979039184}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +26,31 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81B085BE-1A63-44FA-AF01-83F469D55D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B085BE-1A63-44FA-AF01-83F469D55D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B085BE-1A63-44FA-AF01-83F469D55D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B085BE-1A63-44FA-AF01-83F469D55D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379277EA-CE9F-4625-AF0E-65D4ECF5E3AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379277EA-CE9F-4625-AF0E-65D4ECF5E3AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379277EA-CE9F-4625-AF0E-65D4ECF5E3AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379277EA-CE9F-4625-AF0E-65D4ECF5E3AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD4FE93A-4C9B-4251-8B15-EDDF5029A788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4FE93A-4C9B-4251-8B15-EDDF5029A788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4FE93A-4C9B-4251-8B15-EDDF5029A788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4FE93A-4C9B-4251-8B15-EDDF5029A788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{329E2DE5-9AE3-4E1E-A80D-F92979039184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329E2DE5-9AE3-4E1E-A80D-F92979039184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329E2DE5-9AE3-4E1E-A80D-F92979039184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329E2DE5-9AE3-4E1E-A80D-F92979039184}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADF0C74D-118E-4085-A396-7DFEA2FD1380} = {090D6A06-C93E-4C3A-89A9-DABD3024D6C1}
+		{81B085BE-1A63-44FA-AF01-83F469D55D18} = {ADF0C74D-118E-4085-A396-7DFEA2FD1380}
+		{379277EA-CE9F-4625-AF0E-65D4ECF5E3AC} = {D2E1B429-F25A-443A-9573-BC6900A99144}
+		{808C031F-3AA6-419F-ABB5-1495700EE677} = {090D6A06-C93E-4C3A-89A9-DABD3024D6C1}
+		{AD4FE93A-4C9B-4251-8B15-EDDF5029A788} = {808C031F-3AA6-419F-ABB5-1495700EE677}
+		{329E2DE5-9AE3-4E1E-A80D-F92979039184} = {D2E1B429-F25A-443A-9573-BC6900A99144}
 	EndGlobalSection
 EndGlobal
