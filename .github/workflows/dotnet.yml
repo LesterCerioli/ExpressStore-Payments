@@ -2,8 +2,9 @@ name: Express Store Payments CI & CD
 
 on:
   push:
+
     branches: [ main ]
-  
+ 
 
 jobs:
   build:
